@@ -23,6 +23,11 @@ npm install
 
 I had to manually correct the index.js file in the regex-not package to get everything running. It may be fixed by the time you look at this repo (see the change you have to make in the first image)
 
+---
+
+Encryption is done using the [crypto-JS](https://github.com/brix/crypto-js) library.
+
+
 
 
 
