@@ -31,6 +31,15 @@ Encryption is done using the [crypto-JS](https://github.com/brix/crypto-js) libr
 JS Testing is implemented using [Jest](https://facebook.github.io/jest/) .
 
 
+---
+# TODOS:
+
+add a 'Tree' (Merkle?) implementation .
+
+In [cryptography](https://en.wikipedia.org/wiki/Cryptography "Cryptography") and [computer science](https://en.wikipedia.org/wiki/Computer_science "Computer science"), a **hash tree** or **Merkle tree** is a [tree](https://en.wikipedia.org/wiki/Tree_(data_structure) "Tree (data structure)") in which every leaf node is labelled with the hash of a data block and every non-leaf node is labelled with the [cryptographic hash](https://en.wikipedia.org/wiki/Cryptographic_hash_function "Cryptographic hash function") of the labels of its child nodes. Hash trees allow efficient and secure verification of the contents of large data structures. Hash trees are a generalization of [hash lists](https://en.wikipedia.org/wiki/Hash_list "Hash list") and [hash chains](https://en.wikipedia.org/wiki/Hash_chain "Hash chain").
+
+Demonstrating that a leaf node is a part of a given binary hash tree requires computing a number of hashes proportional to the [logarithm](https://en.wikipedia.org/wiki/Logarithm "Logarithm") of the number of leaf nodes of the tree;^[\[1\]](https://en.wikipedia.org/wiki/Merkle_tree#cite_note-1)^ this contrasts with hash lists, where the number is proportional to the number of leaf nodes itself.
+
 
 
 
