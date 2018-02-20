@@ -17,3 +17,12 @@ and [this commit](https://github.com/jonschlinkert/regex-not/commit/335ef0577449
 
 ![a002_regex_not](assets/images/a002_regex_not.png)
 
+After running
+
+npm install
+
+I had to manually correct the index.js file in the regex-not package to get everything running. It may be fixed by the time you look at this repo (see the change you have to make in the first image)
+
+
+
+
