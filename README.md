@@ -27,6 +27,11 @@ I had to manually correct the index.js file in the regex-not package to get ever
 
 Encryption is done using the [crypto-JS](https://github.com/brix/crypto-js) library.
 
+---
+JS Testing is implemented using [Jest](https://facebook.github.io/jest/) .
+
+
+
 
 
 
