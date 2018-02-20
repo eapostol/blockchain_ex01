@@ -5,7 +5,12 @@
 * lastHash
 * data - the data stored in the block.
 *
+* ADDED:
+* -crypto-js library for simple SHA-256 bit encryption
+*
 * */
+
+const SHA_256 = require('crypto-js/sha256');
 
 class SimpleBlock{
 
@@ -40,8 +45,20 @@ class SimpleBlock{
     static mineBlock(previousBlock, newData){
         const timeStamp = Date.now();
         const lastHash = previousBlock.hash;
-        const hash = 'TODO0-CREATE-ANEW0-HASH';
+        const hash = SimpleBlock.hashSha256(timeStamp,lastHash,newData);
         return new this(timeStamp,lastHash,hash,newData);
+    }
+
+    /*
+    * hashSha256 will hash the data that is kept in our block.
+    * */
+
+    static hashSha256(timeStamp,lastHash,currentData) {
+        // TODO: encapsulate the arguments into a model object
+        // the hash should be made based upon the three strings that compose
+        // the block.
+        return SHA_256(`${timeStamp}${lastHash}${currentData}`).toString();
+
     }
 
     // generic string fn
