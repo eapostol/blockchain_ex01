@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev-test": "nodemon dev-test"
+    "dev-test": "nodemon dev-test",
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
